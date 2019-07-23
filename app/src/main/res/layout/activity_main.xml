@@ -4,21 +4,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-    <Button
-        android:id="@+id/asynctask_download"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="AsyncTask下载"
-        />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/thread_base"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程基础"
+                />
 
-    <Button
-        android:id="@+id/asynctask_download_cancel"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="AsyncTask取消"
-        />
+            <Button
+                android:id="@+id/thread_state"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程状态"
+                />
+
+            <Button
+                android:id="@+id/thread_group"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程组"
+                />
+
+            <Button
+                android:id="@+id/thread_daemon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="守护线程"
+                />
+
+            <Button
+                android:id="@+id/thread_sleep"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程休眠"
+                />
+
+            <Button
+                android:id="@+id/thread_stop"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程停止_开始"
+                />
+
+
+            <Button
+                android:id="@+id/thread_stop_stop"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程停止_停止"
+                />
+
+            <Button
+                android:id="@+id/thread_join"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程插队"
+                />
+
+            <Button
+                android:id="@+id/thread_no_sync"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程同步数据读写"
+                />
+
+            <Button
+                android:id="@+id/thread_sync_data"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程同步数据读写 结果"
+                />
+
+            <Button
+                android:id="@+id/thread_msg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="多线程通信"
+                />
+
+            <Button
+                android:id="@+id/thread_dead"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="多线程死锁"
+                />
+
+            <Button
+                android:id="@+id/thread_product"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="阻塞队列实现 线程同步"
+                />
+            <Button
+                android:id="@+id/thread_product_statue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="阻塞队列结束后 线程状态"
+                />
+            <Button
+                android:id="@+id/thread_return"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="创建有返回值的线程"
+                />
+
+            <Button
+                android:id="@+id/thread_pool"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="线程池 使用"
+                />
+
+            <Button
+                android:id="@+id/asynctask_download"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="AsyncTask下载"
+                />
+
+            <Button
+                android:id="@+id/asynctask_download_cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="AsyncTask取消"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 
 </LinearLayout>
